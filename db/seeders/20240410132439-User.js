@@ -1,0 +1,26 @@
+/** @type {import('sequelize-cli').Migration} */
+const bcrypt = require('bcrypt');
+
+module.exports = {
+  async up(queryInterface, Sequelize) {
+    await queryInterface.bulkInsert('User', [{
+      name: 'Admin',
+      email: 'admin@gmail.com',
+      password: await bcrypt.hash('admin', 10),
+    },
+    {
+      name: 'Maria',
+      email: 'maria@gmail.com',
+      password: await bcrypt.hash('maria', 10),
+    }], {});
+  },
+
+  async down(queryInterface, Sequelize) {
+    /**
+     * Add commands to revert seed here.
+     *
+     * Example:
+     * await queryInterface.bulkDelete('People', null, {});
+     */
+  },
+};

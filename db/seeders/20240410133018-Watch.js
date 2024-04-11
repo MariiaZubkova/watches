@@ -2,7 +2,7 @@
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.bulkInsert('Watch', [{
+    await queryInterface.bulkInsert('Watches', [{
       title: 'супер часы',
       description: 'описание суууупер часов',
       img: '../../img/istockphoto-1180244659-612x612.webp',

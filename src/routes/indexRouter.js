@@ -1,10 +1,11 @@
 import express from 'express';
+import { Order } from '../../db/models';
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  const initState = { hello: 'world' };
-  res.render('IndexPage', initState);
+router.get('/', async (req, res) => {
+  const ress = await Order.findAll();
+  res.render('MainPage', { ress });
 });
 
 export default router;

@@ -2,9 +2,9 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert('Orders', [{
-      type: 'супер часы',
+      title: 'супер часы',
       description: 'описание суууупер часов',
-      img: '../../img/istockphoto-1180244659-612x612.webp',
+      img: '/img/istockphoto-1180244659-612x612.webp',
       userId: '2',
     }], {});
   },

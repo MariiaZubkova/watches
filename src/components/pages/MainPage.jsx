@@ -3,13 +3,20 @@ import React from 'react';
 // import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import OneWatchCard from '../ui/OneWatchCard';
+import AppCorousel from '../ui/AppCorousel';
 
-export default function MainPage({ watch }) {
+export default function MainPage({ watch, user }) {
 //   const { currentPosts, submitHandler, deleteHandler } = usePosts({ watch });
   return (
-    <Row>
-      {watch.map((el) => <OneWatchCard key={el.id} watch={el} />)}
-    </Row>
+    <>
+      <Row>
+        <AppCorousel />
+
+      </Row>
+      <Row>
+        {watch.map((el) => <OneWatchCard key={el.id} watch={el} user={user} />)}
+      </Row>
+    </>
 
   );
 }

@@ -7,6 +7,7 @@ import jsxRender from './utils/jsxRender';
 import indexRouter from './routes/indexRouter';
 import apiRouter from './routes/apiRouter';
 import resLocals from './middlewares/resLocals';
+import ordersRouter from './routes/render/ordersRouter';
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -24,5 +25,7 @@ app.use(resLocals);
 
 app.use('/', indexRouter);
 app.use('/api', apiRouter);
+
+app.use('/orders', ordersRouter);
 
 app.listen(PORT, () => console.log(`App has started on port ${PORT}`));

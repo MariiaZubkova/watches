@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 
 function OneWatchCard({ watch }) {
   return (
-    <Col xs={12} md={4} className='mt-5'>
+    <Col xs={12} md={4} className="mt-5">
       <Card>
         <Card.Img variant="top" src={`${watch.img}`} />
         <Card.Body>
@@ -13,7 +13,7 @@ function OneWatchCard({ watch }) {
           <Card.Text>
             {watch.description}
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="primary">Редактировать</Button>
         </Card.Body>
       </Card>
     </Col>
@@ -21,3 +21,6 @@ function OneWatchCard({ watch }) {
 }
 
 export default OneWatchCard;
+
+// { /* {user.name === 'Admin'
+//           && <Button variant="primary">Удалить</Button>} */ }

@@ -1,5 +1,5 @@
 import express from 'express';
-import { Order, Watch } from '../../db/models';
+import { Order, Watch, Watch } from '../../db/models';
 
 const router = express.Router();
 router.get('/', async (req, res) => {

@@ -22,5 +22,5 @@ function OneWatchCard({ watch }) {
 
 export default OneWatchCard;
 
-{ /* {user.name === 'Admin'
-          && <Button variant="primary">Удалить</Button>} */ }
+// { /* {user.name === 'Admin'
+//           && <Button variant="primary">Удалить</Button>} */ }

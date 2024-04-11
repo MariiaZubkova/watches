@@ -32,7 +32,7 @@ module.exports = {
         title: 'супер часы',
         description: 'описание суууупер часов',
         img: '/img/istockphoto-1180244659-612x612.webp',
-      }
+      },
     ], {});
   },
 

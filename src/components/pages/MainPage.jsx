@@ -1,15 +1,10 @@
-import React from 'react';
-// import Button from 'react-bootstrap/Button';
-// import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import OneWatchCard from '../ui/OneWatchCard';
+import React, { useState } from 'react';
+import AdditionForm from '../ui/AdditionForm';
 
-export default function MainPage({ watch }) {
-//   const { currentPosts, submitHandler, deleteHandler } = usePosts({ watch });
+export default function MainPage({ ress }) {
+  const [rs, setRes] = useState(ress);
+
   return (
-    <Row>
-      {watch.map((el) => <OneWatchCard key={el.id} watch={el} />)}
-    </Row>
-
+    <AdditionForm setRes={setRes} />
   );
 }

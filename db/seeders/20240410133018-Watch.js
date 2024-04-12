@@ -9,28 +9,28 @@ module.exports = {
         img: '/img/istockphoto-1180244659-612x612.webp',
       },
       {
-        title: 'супер часы',
-        description: 'описание суууупер часов',
+        title: 'мечты',
+        description: 'описание супер кайф',
         img: '/img/istockphoto-1180244659-612x612.webp',
       },
       {
-        title: 'супер часы',
-        description: 'описание суууупер часов',
+        title: 'швейцарские',
+        description: 'описание швейцарских часов',
         img: '/img/istockphoto-1180244659-612x612.webp',
       },
       {
-        title: 'супер часы',
-        description: 'описание суууупер часов',
+        title: 'часы бывшей',
+        description: 'описание слез радости',
         img: '/img/istockphoto-1180244659-612x612.webp',
       },
       {
-        title: 'супер часы',
-        description: 'описание суууупер часов',
+        title: 'паша',
+        description: 'описание часов паши',
         img: '/img/istockphoto-1180244659-612x612.webp',
       },
       {
-        title: 'супер часы',
-        description: 'описание суууупер часов',
+        title: 'часы кака',
+        description: 'описание кака',
         img: '/img/istockphoto-1180244659-612x612.webp',
       },
     ], {});

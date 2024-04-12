@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function OneWatchCard({ watch }) {
+function OneWatchCard({ watch, user, clickHandler }) {
   return (
     <Col xs={12} md={4} className="mt-5">
       <Card>
@@ -13,7 +13,13 @@ function OneWatchCard({ watch }) {
           <Card.Text>
             {watch.description}
           </Card.Text>
-          <Button variant="primary">Редактировать</Button>
+
+          {user?.isAdmin && (
+          <>
+            <Button variant="primary" style={{ marginRight: '150px' }}>Редактировать</Button>
+            <Button variant="primary" onClick={() => clickHandler(watch.id)}>Удалить</Button>
+          </>
+          )}
         </Card.Body>
       </Card>
     </Col>
@@ -21,6 +27,3 @@ function OneWatchCard({ watch }) {
 }
 
 export default OneWatchCard;
-
-{ /* {user.name === 'Admin'
-          && <Button variant="primary">Удалить</Button>} */ }

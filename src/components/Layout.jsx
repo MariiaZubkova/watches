@@ -1,6 +1,12 @@
 import React from 'react';
 
 export default function Layout({ children, initState }) {
+  const layoutStyle = {
+    backgroundImage: 'url("https://baldezh.top/uploads/posts/2021-04/1618448747_51-funart_pro-p-oboi-fon-fon-derevyannie-doski-61.jpg")',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    minHeight: '100vh',
+  };
   return (
     <html lang="en">
       <head>
@@ -17,7 +23,7 @@ export default function Layout({ children, initState }) {
         />
         <title>Document</title>
       </head>
-      <body>
+      <body style={layoutStyle}>
         <div id="root">{children}</div>
       </body>
     </html>
